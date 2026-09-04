@@ -130,25 +130,14 @@
     🔒 Restricted to: @natasittttt, @mmaxmaxxxx, @HeartDy_DMD, @YourThirdSeries
   </div>
 
-  <!-- THE BOOKMARKLET BUTTON -->
-  <script>
-    // Dynamic rename during drag event
-    const btn = document.getElementById('main-bookmarklet');
-    const visibleText = '👉 Drag & Drop Me to Bookmarks Bar 💕';
-    const bookmarkName = '💙 MaxNat interaction 💖';
-
-    btn.addEventListener('dragstart', function() {
-      btn.textContent = bookmarkName;
-    });
-
-    btn.addEventListener('dragend', function() {
-      btn.textContent = visibleText;
-    });
-  </script>
+  <!-- THE DYNAMIC BOOKMARKLET BUTTON -->
+  <a id="main-bookmarklet" class="bookmarklet-btn" title="💙 MaxNat interaction 💖" href="#">
+    👉 Drag & Drop Me to Bookmarks Bar 💕
+  </a>
 
   <!-- 4-STEP INSTRUCTIONS SECTION -->
   <div class="steps">
-    <h3>📖 How to Use (Easy 4 Steps)</h3>
+    <h3>📖 How to Use (4 Easy Steps)</h3>
     <ol>
       <li><b>Show Bookmarks Bar:</b> Press <span class="kbd">Ctrl</span> + <span class="kbd">Shift</span> + <span class="kbd">B</span> on Windows/Chrome (or <span class="kbd">Cmd</span> + <span class="kbd">Shift</span> + <span class="kbd">B</span> on Mac).</li>
       <li><b>Drag & Drop:</b> Click and drag the button above onto your Bookmarks Bar (it will automatically name itself <b>💙 MaxNat interaction 💖</b>).</li>
@@ -179,7 +168,7 @@
         var wm = document.createElement('div');
         wm.id = 'x-restrict-modal';
         wm.style = 'position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);width:440px;background:#ffffff;border:3px solid #ff66a3;border-radius:28px;padding:28px;z-index:99999999;box-shadow:0 20px 60px rgba(0,0,0,0.4);font-family:system-ui,-apple-system,sans-serif;text-align:center;color:#2c3e50;';
-        wm.innerHTML = '<div style="font-size:36px;margin-bottom:8px;">💙💖🦖🍼</div><h2 style="margin:0 0 6px 0;color:#ff3385;font-size:20px;font-weight:800;">MaxNat Related Profiles Only</h2><p style="color:#0088cc;font-size:13px;font-weight:600;line-height:1.5;margin:0 0 16px 0;">This interaction auditor is reserved for our special four:</p><div style="display:flex;flex-direction:column;gap:8px;margin-bottom:20px;"><a href="https://x.com/natasittttt" style="background:#fff5f8;border:1.5px solid #ffb3d1;color:#ff3385;padding:8px 12px;border-radius:14px;text-decoration:none;font-weight:700;font-size:13px;">✨ @natasittttt</a><a href="https://x.com/mmaxmaxxxx" style="background:#f0f9ff;border:1.5px solid #b3e5fc;color:#0099e6;padding:8px 12px;border-radius:14px;text-decoration:none;font-weight:700;font-size:13px;">✨ @mmaxmaxxxx</a><a href="https://x.com/HeartDy_DMD" style="background:#fff5f8;border:1.5px solid #ffb3d1;color:#ff3385;padding:8px 12px;border-radius:14px;text-decoration:none;font-weight:700;font-size:13px;">✨ @HeartDy_DMD</a><a href="https://x.com/YourThirdSeries" style="background:#f0f9ff;border:1.5px solid #b3e5fc;color:#0099e6;padding:8px 12px;border-radius:14px;text-decoration:none;font-weight:700;font-size:13px;">✨ @YourThirdSeries</a></div><button id="close-restrict-btn" style="background:linear-gradient(135deg, #ffb3c6 0%, #a2d2ff 100%);color:#1f2937;border:none;padding:10px 24px;border-radius:20px;font-weight:800;font-size:13px;cursor:pointer;box-shadow:0 4px 12px rgba(162,210,255,0.4);">Got it 💕</button>';
+        wm.innerHTML = '<div style="font-size:36px;margin-bottom:8px;">💙💖🦖🍼</div><h2 style="margin:0 0 6px 0;color:#ff3385;font-size:20px;font-weight:800;">MaxNat Related Profiles Only</h2><p style="color:#0088cc;font-size:13px;font-weight:600;line-height:1.5;margin:0 0 16px 0;">This interaction page is reserved for our special four:</p><div style="display:flex;flex-direction:column;gap:8px;margin-bottom:20px;"><a href="https://x.com/natasittttt" style="background:#fff5f8;border:1.5px solid #ffb3d1;color:#ff3385;padding:8px 12px;border-radius:14px;text-decoration:none;font-weight:700;font-size:13px;">✨ @natasittttt</a><a href="https://x.com/mmaxmaxxxx" style="background:#f0f9ff;border:1.5px solid #b3e5fc;color:#0099e6;padding:8px 12px;border-radius:14px;text-decoration:none;font-weight:700;font-size:13px;">✨ @mmaxmaxxxx</a><a href="https://x.com/HeartDy_DMD" style="background:#fff5f8;border:1.5px solid #ffb3d1;color:#ff3385;padding:8px 12px;border-radius:14px;text-decoration:none;font-weight:700;font-size:13px;">✨ @HeartDy_DMD</a><a href="https://x.com/YourThirdSeries" style="background:#f0f9ff;border:1.5px solid #b3e5fc;color:#0099e6;padding:8px 12px;border-radius:14px;text-decoration:none;font-weight:700;font-size:13px;">✨ @YourThirdSeries</a></div><button id="close-restrict-btn" style="background:linear-gradient(135deg, #ffb3c6 0%, #a2d2ff 100%);color:#1f2937;border:none;padding:10px 24px;border-radius:20px;font-weight:800;font-size:13px;cursor:pointer;box-shadow:0 4px 12px rgba(162,210,255,0.4);">Got it 💕</button>';
         document.body.appendChild(wm);
         document.getElementById('close-restrict-btn').addEventListener('click', function() { wm.remove(); });
         return;
@@ -199,7 +188,7 @@
     var minBadge = document.createElement('div');
     minBadge.id = 'x-minimized-badge';
     minBadge.style = 'display:none;position:fixed;bottom:24px;right:24px;background:linear-gradient(135deg, #ffb3c6 0%, #a2d2ff 100%);color:#1f2937;border:2px solid #ffffff;border-radius:30px;padding:12px 20px;font-weight:800;font-size:13px;cursor:pointer;z-index:9999999;box-shadow:0 8px 24px rgba(162,210,255,0.5);font-family:system-ui,-apple-system,sans-serif;';
-    minBadge.innerHTML = '💙🦖 MaxNat Audit (<span id="min-badge-count">0</span>) 💖';
+    minBadge.innerHTML = '💙🦖 MaxNat Interaction (<span id="min-badge-count">0</span>) 💖';
     document.body.appendChild(minBadge);
 
     document.getElementById('min-audit-btn').onclick = function() {
@@ -298,7 +287,24 @@
 })();`;
 
   // Safe URI-encoded bookmarklet link generator
-  document.getElementById('main-bookmarklet').href = 'javascript:' + encodeURIComponent(scriptCode);
+  const btn = document.getElementById('main-bookmarklet');
+  btn.href = 'javascript:' + encodeURIComponent(scriptCode);
+
+  // Dynamic naming trick: On click/drag, swap the text so it saves as the desired name!
+  const visibleText = '👉 Drag & Drop Me to Bookmarks Bar 💕';
+  const bookmarkName = '💙 MaxNat Interaction 💖';
+
+  btn.addEventListener('mousedown', function() {
+    btn.textContent = bookmarkName;
+  });
+
+  btn.addEventListener('dragend', function() {
+    btn.textContent = visibleText;
+  });
+
+  document.addEventListener('mouseup', function() {
+    btn.textContent = visibleText;
+  });
 </script>
 
 </body>
